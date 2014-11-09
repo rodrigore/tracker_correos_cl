@@ -19,6 +19,10 @@ module TrackerCorreosCl
       @valid_number
     end
 
+    def delivered?
+      !@tracking_collection.nil? && !@tracking_collection.empty?
+    end
+
     private
 
     def fetch(url)

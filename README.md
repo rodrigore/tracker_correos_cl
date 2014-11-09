@@ -32,6 +32,9 @@ tracking_response = TrackerCorreosCl::Tracker.new(tracking_number)
 ```ruby
 # Useful method to check if the tracking number doesn't exist
 tracking_response.valid?
+
+# Useful method to check if the tracking number was delivered
+tracking_response.delivered?
 ```
 
 #### Properties
